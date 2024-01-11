@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="d-flex nav-bar">
+            <img id="menu-bar" img src="/images/menu-bar.svg" alt="menu-bar">
+            <img id="header-logo" img src="/images/header-logo.svg" alt="header-logo">
+            <img id="search-icon" img src="/images/search-icon.svg" alt="search-icon">
+           
+            <input type="search" class="search-bar" placeholder="search" area-label="search">
+              <img id="notification-icon" img src="/images/notification-icon.svg" alt="notification-icon">
+        <img id="profile" img src="/images/profile.png" alt="profile">
+        <p class="username">john doe</p>
+        <img id="downword-arrow" img src="/images/select-downward.svg" alt="downword-arrow">
+            </div>
+    </div>
+
+    <div class="mobile">
+        <div class="side-bar">
+            <div class="side-bar d-flex">
+                <img id="default" img src="/images/dashboard-default.svg" alt="dashboard-default">
+                <p class="item">dashboard</p>
+             </div>
+             <div class="d-flex">
+                <img id="default" img src="/images/graph-default.svg" alt="graph-default">
+                <p class="item">analysis</p>
+             </div>
+             <div class="d-flex">
+                <img id="default" img src="/images/inbox-default.svg" alt="inbox-default">
+                <p class="item">inbox</p>
+            </div>
+             <div class="d-flex">
+                <img id="default" img src="/images/clock-default.svg" alt="clock-default">
+                <p class="item">history</p>
+             </div>
+             <div class="d-flex">
+                <img id="default" img src="/images/user-default.svg" alt="user-default">
+                <p class="item">user</p>
+        </div>
+        <div class="d-flex">
+            <img id="default" img src="/images/maintenance-default.svg" alt="maintenance-default">
+            <p class="item">maintenance</p>
+        </div>
+        <div class="d-flex">
+            <img id="default" img src="/images/setting-default.svg" alt="setting-default">
+            <p class="item">setting</p>
+        </div>
+    </div>
+    <div class="dashboard">
+        <h1 class="dashboard-name">dashboard</h1>
+        <div class="d-flex">
+            <div class="product d-flex">
+                <img id="star" img src="/images/star.svg" alt="star">
+                <div class="product-name">
+                    <h3 class="number">23456</h3>
+                    <p id="text">new product</p>
+                </div>
+            </div>
+            <div class="product d-flex">
+                <img id="new" img src="images/new-product.svg" alt="new">
+                <div class="product-name">
+                    <h3 class="number">2345</h3>
+                    <p id="text">added product</p>   
+                </div>
+
+        </div>
+        <div class="product d-flex">
+            <img id="total" img src="/images/total-product.svg" alt="total">
+            <div class="product-name">
+                <h3 class="number">32456</h3>
+                <p id="text">total product</p>  
+         </div>
+         </div>
+         <div class="product d-flex">
+            <img id="dollar" img src=""
+
+        </div>        
+    </div>
+ </div>
+</body>
+</html>
