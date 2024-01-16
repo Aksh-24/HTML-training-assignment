@@ -1,245 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/css/style.css"/>
-</head>
-<body>
-  <div class="navbar anil ">
-    <div class="d-flex navbar-items">
-      
-        <img class="menu-bar" src="/images/menu-bar.svg" alt="logo">
-      
-        <img src="/images/header-logo.svg" alt="company-logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-        <img class="search-icon" src="/images/search-icon.svg" alt="">
-        <input type="search" class="search-bar" placeholder="search" aria-label="search">
-         
-        
-          <img src="/images/notification-icon.svg" class="notification-icon" alt="">
+  <body>
 
-          <img src="/images/profile.png" class="profile-photo "alt="">
-          <p class="username">John Doe</p>
-          <img class="downward-arrow" src="/images/downward-arrow.svg" alt="">
-          
-        </div>
-
-      </div>
     
+    
+    <div class="container-fluid ">
+    
+                <nav class="navbar aksh">
+                 <div class="d-flex justify-content-start gap-3">
+                   <div class="p-2 d-flex flex-row gap-2">
+                     <div class="menu-bar" id="tabclick" onclick={toggle_visibility()}>
+                         <img src="/images/menu-bar.svg" class="menu-icon" alt="" />
+                     </div>
+                     <div class="company-logo">
+                       <img src="/images/logo.svg" class="company-icon" alt="" />
+                     </div>
+                    </div>                                                                           
 
-          <div class=" hero-section">
-            <div class="sidebar">
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/dashboard-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Dashboard</p>
-              </div>
+                    <div class="p-2  gap-2 flex-row d-flex">
+                     <div class="search-icon py-1">
+                         <img src="/images//search-icon.svg" class="search-ico" alt="">
+                     </div>
+                     <div class="search-icon">
+                         <input type="search" class="form-control search-bar me-2" placeholder="Search" aria-label="Search" >
+                 
+                     </div>
+                   </div>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/graph-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Analysis</p>
-              </div>
+                </div>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/inbox-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Inbox</p>
-              </div>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/clock-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">History</p>
-              </div>
+               <div class="d-flex float-end gap-3">
+                    <div class="p-2 my-auto ">
+                        <img src="/images/notification-icon.svg" alt="" class="notification-icon"/>
+                     </div>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/user-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Users</p>
+                      <div class="p-2 my-auto">
+                        <img src="/images/profile.png" alt="" class="profile"/>
+                        <span class="username">John Doe</span>
+                        <img src="/images/downward-arrow.svg" alt="" />
+                      </div>
               </div>
+            </nav>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/maintenance-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Maintance</p>
-              </div>
+    </div>
 
-              <div class="sidebar-items1 d-flex">
-                <img src="/images/setting-default.svg" class="dashboard-active" alt="">
-                <p class="sidebat-text">Settings</p>
-              </div>
+     
+
+    <div class="container-fluid">
+      <div class="row d-flex ">
+        <div class="col-2" id="aksh" class="">
+          <div class="w-auto mt-3 ">
+            <div class="p-2 gap-2 d-flex flex-row ">
+              <img src="/images/dashboard-active.svg" class="icon" alt="" />
+              <h3 class="item-text  text-danger" id="sidebar">Dashboard</h3>
             </div>
-
-            <div class="dashboard">
-
-                <h1 class="dashboard-name">Dashboard</h1>
-                <div class="d-flex">
-                  <div class="product d-flex">
-                    <img class="star " src="/images/star.svg" alt="">
-                    <div class="product-name">
-                      <h3>23,456</h3>
-                      <p>New Products</p>
-                    </div>
-                  </div>
-
-                  <div class="product d-flex">
-                    <img class="star " src="/images/new-product.svg" alt="">
-                    <div class="product-name">
-                      <h3>2345</h3>
-                      <p> Added Products</p>
-                    </div>
-                  </div>
-
-                  <div class="product d-flex">
-                    <img class="star " src="/images/total-product.svg" alt="">
-                    <div class="product-name">
-                      <h3>32,456</h3>
-                      <p> Total Products</p>
-                    </div>
-                  </div>
-
-                  <div class="product d-flex">
-                    <img class="star " src="/images/dollar-filled.svg" alt="">
-                    <div class="product-name">
-                      <h3>5648</h3>
-                      <p> Today's sale </p>
-                    </div>
-                  </div>
-
-                  <div class="product d-flex">
-                    <img class="star " src="/images/money-bag.svg" alt="">
-                    <div class="product-name">
-                      <h3>33,5342</h3>
-                      <p> Total Sale</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main d-flex">
-                  <div class="graph">
-                    <span class="sale-name">Sale </span>
-                  <img src="/images/data-graph.png" alt="">
-                 </div>
-
-                 <div class="sale">
-                  <p class="sale-name">Sales By Country </p>
-                <img id ="pie-chart" src="/images/pie-chart.svg" alt="">
- 
-                <div class="container">
-                  <div class="row-cols-2 row">
-                    
-                      <li class="col bg">United States Of America</li>
-                      <li class="col">Canada</li>
-                      <li class="col">Russia </li> 
-                      <li class="col">India </li> 
-                      
-                    </div>
-                    
-                </div>
-                </div>
-                
-               </div>
-
-               <div class="invoice">
-                <div class="view d-flex">
-                  <h1 class="invoice-name">Invoices</h1>
-                  <!-- <h1 class="view-name">View All</h1> -->
-                </div>
-              
-
-                <div class="table-entry">
-
-                <table class="table">
-              
-                  <tr class="top-table">
-                    <th>INVOICE</th>
-                    <th>COMPANY NAME</th>
-                    <th>EMAIL</th>
-                    <th>DUE DATE</th>
-                    <th>STATUS</th>
-                    <th>AMOUNT</th>
-                  </tr>
-                
-                <tbody >
-                  <tr>
-                    <td>651535</td>
-                    <td>Public Adjusting Firm</td>
-                    <td>georgia.young@example.com</td>
-                    <td>24 May, 2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$47,800</td>
-                  </tr>
-                  <tr>
-                    <td>558612</td>
-                    <td>other</td>
-                    <td>jessica.hanson@example.com</td>
-                    <td>24 May,2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$98,000</td>
-                  </tr>
-                  <tr>
-                    <td>558612</td>
-                    <td>Vendor</td>
-                    <td>aima.lawson@example.com</td>
-                    <td>8 Sep,2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$20,900</td>
-                  </tr>
-                  <tr>
-                    <td>558612</td>
-                    <td>Property Management Company</td>
-                    <td>kenzi.lawson@example.com</td>
-                    <td>22 Oct,2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$10,570</td>
-                  </tr>
-                  <tr>
-                    <td>651535</td>
-                    <td>Subcontractor Company</td>
-                    <td>jackson.graham@example.com</td>
-                    <td>1 feb,2020</td>
-                    <td><div class="failed">Failed</div></td>
-                    <td>$10,200</td>
-                  </tr>
-                  <tr>
-                    <td>653518</td>
-                    <td>Mortgage Company</td>
-                    <td>felicia.reid@example.com</td>
-                    <td>22 Oct,2020</td>
-                    <td><div class="pending">Pending</div></td>
-                    <td>$12,600</td>
-                  </tr>
-                  <tr>
-                    <td>487441</td>
-                    <td>TPA</td>
-                    <td>dolores.chambers@example.com</td>
-                    <td>21 Sep,2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$11,170</td>
-                  </tr>
-                  <tr>
-                    <td>267400</td>
-                    <td>Fire Department</td>
-                    <td>navaeh.simmons@example.com</td>
-                    <td>17 Oct,2020</td>
-                    <td><div class="failed">Failed</div></td>
-                    <td>$28,000</td>
-                  </tr>
-                  <tr>
-                    <td>449003</td>
-                    <td>Insurance Carrier</td>
-                    <td>curtis.weaver@example.com</td>
-                    <td>21 Sep,2020</td>
-                    <td><div class="paid">Paid</div></td>
-                    <td>$10,000</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class=" d-flex p-2">
+              <img src="/images/graph-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">Analysis</h5>
             </div>
+            <div class=" d-flex p-2">
+              <img src="/images/inbox-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">Inbox</h5>
+            </div>
+            <div class=" d-flex p-2">
+              <img src="/images/clock-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">History</h5>
+            </div>
+            <div class="d-flex p-2">
+              <img src="/images/user-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">Users</h5>
+            </div>
+            <div class=" d-flex p-2">
+              <img src="/images/maintenance-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">Maintenance</h5>
+            </div>
+            <div class=" d-flex p-2">
+              <img src="/images/setting-default.svg" class="icon" alt="" />
+              <h5 class="item-text mx-2">Setting</h5>
+            </div>
+          </div>
         </div>
-     </div>
-   </div>
+
+        <div class="col-10 dashboard-content anil">
+          <div class="mx-3">
+            <h3 class="mt-3">Dashboard</h3>
+
+            <div class="container mt-3">
+              <div class="row gap-3">
+
+                <div class="col d-flex flex-row p-3 backclr">
+                  <div class="mx-2 my-auto">
+                    <img src="/images/star.svg" alt="" />
+                  </div>
+                  
+                  <div> 
+                      <h4>23,456</h4>
+                      <h6>New Products</h6>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-row p-3  backclr">
+                    <div class="mx-2 my-auto">
+                      <img src="/images/new-product.svg" alt="" />
+                    </div>
+                    
+                    <div> 
+                        <h4>2345</h4>
+                        <h6>Added Products</h6>
+                    </div>
+                  </div>
+
+                  
+                <div class="col d-flex flex-row p-3  backclr">
+                    <div class="mx-2 my-auto patel">
+                      <img src="/images/total-product.svg" alt="" />
+                    </div>
+                    
+                    <div> 
+                        <h4>32,456</h4>
+                        <h6>Total Products</h6>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex flex-row p-3  backclr">
+                    <div class="mx-2 my-auto">
+                      <img src="/images/dollar-filled.svg" alt="" />
+                    </div>
+                    
+                    <div> 
+                        <h4>5648</h4>
+                        <h6>Today's Sale</h6>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex flex-row p-3 backclr">
+                    <div class="mx-2 my-auto">
+                      <img src="/images/money-bag.svg" alt="" />
+                    </div>
+                    
+                    <div> 
+                        <h4>33,5342</h4>
+                        <h6>Total Sale</h6>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-lg-7 p-3 backclr">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="fs-3">Sale</h5>
+                    <p>Weekly Monthly Yearly</p>
+                  </div>
+
+                  <div>
+                    <img src="/images/data-graph.png" class="img-fluid" alt="">
+                  </div>
+
+                </div>
+
+                <div class="col-lg-5 p-3 backclr">
+                  <h4>Sale by country</h4>
+                  <div class="d-flex justify-content-center">
+                    <img src="/images/pie-chart.svg" class="img-fluid" alt="" />
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6 d-flex gap-2">
+                        <p class="dot-red"></p>
+                        <p >USA</p>
+                    </div>
+
+                    <div class="col-6 d-flex gap-2">
+                        <p class="dot-green"></p>
+                        <p>Canada</p>
+                    </div>
+
+                    <div class="col-6 d-flex gap-2">
+                        <p class="dot-orange"></p>
+                        <p>Russia</p>
+                    </div>
+
+                    <div class="col-6 d-flex gap-2">
+                     
+                        <p class="dot-yellow"></p>
+                        <p>India</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mt-3 p-3">
+                <div class="">
+                    <div class=" d-flex justify-content-between">
+                      <h1 class="">Invoices</h1>
+                      <p class="">View All</p>
+                    
+                    </div>
+
+                    <div class="table-entry table-responsive">
+
+                        <table class="table">
+                      
+                          <tr class="top-table text-muted">
+                            <th>INVOICE</th>
+                            <th>COMPANY NAME</th>
+                            <th>EMAIL</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>AMOUNT</th>
+                          </tr>
+                        
+                        <tbody >
+                          <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May,2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$98,000</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>Vendor</td>
+                            <td>aima.lawson@example.com</td>
+                            <td>8 Sep,2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$20,900</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>Property Management Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct,2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$10,570</td>
+                          </tr>
+                          <tr>
+                            <td>651535</td>
+                            <td>Subcontractor Company</td>
+                            <td>jackson.graham@example.com</td>
+                            <td>1 feb,2020</td>
+                            <td><div class="failed">Failed</div></td>
+                            <td>$10,200</td>
+                          </tr>
+                          <tr>
+                            <td>653518</td>
+                            <td>Mortgage Company</td>
+                            <td>felicia.reid@example.com</td>
+                            <td>22 Oct,2020</td>
+                            <td><div class="pending">Pending</div></td>
+                            <td>$12,600</td>
+                          </tr>
+                          <tr>
+                            <td>487441</td>
+                            <td>TPA</td>
+                            <td>dolores.chambers@example.com</td>
+                            <td>21 Sep,2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$11,170</td>
+                          </tr>
+                          <tr>
+                            <td>267400</td>
+                            <td>Fire Department</td>
+                            <td>navaeh.simmons@example.com</td>
+                            <td>17 Oct,2020</td>
+                            <td><div class="failed">Failed</div></td>
+                            <td>$28,000</td>
+                          </tr>
+                          <tr>
+                            <td>449003</td>
+                            <td>Insurance Carrier</td>
+                            <td>curtis.weaver@example.com</td>
+                            <td>21 Sep,2020</td>
+                            <td><div class="paid">Paid</div></td>
+                            <td>$10,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
-      
 
-
-</body>
+  </body>
 </html>

@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-</head>
-<body>
-    <div class="stylesheet">
-       <div class="login">
-        <img class="hero-logo" img src="\images\hero-image.png" alt="">
-          
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>login page</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
 
-        <div id="login">
-            <img id="/images/header-logo.svg" alt="">
+    <div class="container aksh">
+      <div class="row">
+        <div class="col-md-6 mt-5 d-flex align-items-center ">
+          <img
+            src="/images/hero-image.png"
+            class="rounded-circle img-fluid img-logo"
+            alt=""
+          />
+        </div>
 
-            <h1 id="h1">We Are Experts In Bussiness , Marketing , Growth & Sales.</h1>
+        <div class="col-md-6">
+          <div class="p-3 ">
 
-            <h3>Login into your account</h3>
-
-            <input type="text" name="text" placeholder="username">
-
-            <input type="number" name="password" placeholder="password">
-
-            <div id="text">
-                <button>Login</button>
-                <p id="forgot_pass">forgot password</p>
+            <div class="comp-info mb-4 ">
+              <img src="/images/header-logo.svg" class="header-logo" alt="" />
             </div>
 
-            <p id="new-member">Are you a new member?   <a id="register"> register here</a></p>
+            <div class="info mb-4">
+                <h3>We are <span class="text-danger">experts</span> in business marketing, growth, & sales.</h3>
+            </div>
+
+            <div class="login-info mb-4">
+              <div class="mb-4">
+                <h5>Login into your account</h5>
+                 <div>
+                    <input type="text" class="form-control mb-3" placeholder="Username">
+
+                    <input type="password" class="form-control" placeholder="Password">
+                 </div>
+             
+            </div>
+
             
-           </div>
+            <div class="btn d-flex mb-4">
+              <div class="login-btn btn-danger text-center py-1">Login</div>
+              <a href="#" class="forget-link text-muted text-decoration-none">Forget password?</a>
+            </div>
+
+            <div class="new-member ">
+                <span>Are you a new member?  <a href="#" class="text-danger text-decoration-none register-link">Register here </a></span>
+            </div>
+            
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
+ 
+    

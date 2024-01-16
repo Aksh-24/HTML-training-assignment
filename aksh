@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -85,4 +85,155 @@
     </div>
  </div>
 </body>
+</html>
+
+
+
+
+<body>
+    <div class="dashboard">
+        <h1 class="dashboard-name">display</h1>
+        <h3 class="column-name">one column</h3>
+        <input type="name" class="name-analysis" placeholder="name">
+        <input type="dropdown" class="name-analysis" placeholder="dropdown">
+        <textarea name="" id="line-analysis" cols="30" rows="10" placeholder="multiple line"></textarea>
+
+        <h3 class="column-name">two column</h3>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col">
+            <input type="name" class="name-analysis" placeholder="name">
+           </div>
+           <div class="col">
+            <input type="name" class="name-analysis" placeholder="john doe">
+           </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" class="name-analysis" placeholder="password">
+            </div>
+            <div class="col">
+                <input type="text" class="name-analysis" placeholder="dropdown">
+            </div>
+        </div>
+        <h3 class="column-name">three column</h3>
+        <div class="row">
+            <div class="col">
+                <input type="name" class="name-analysis" placeholder="">
+               </div>
+               <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div>
+               <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div> 
+        </div>
+        <h3 class="column-name">four column</h3>
+        <div class="row">
+            <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div>
+               <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div>
+               <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div>
+               <div class="col">
+                <input type="name" class="name-analysis" placeholder="name">
+               </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="stylesheet">
+       <div class="login">
+        <img class="hero-logo" img src="\images\hero-image.png" alt="">
+          
+    </div>
+
+        <div id="login">
+            <img id="/images/header-logo.svg" alt="">
+
+            <h1 id="h1">We Are Experts In Bussiness , Marketing , Growth & Sales.</h1>
+
+            <h3>Login into your account</h3>
+
+            <input type="text" name="text" placeholder="username">
+
+            <input type="number" name="password" placeholder="password">
+
+            <div id="text">
+                <button>Login</button>
+                <p id="forgot_pass">forgot password</p>
+            </div>
+
+            <p id="new-member">Are you a new member?   <a id="register"> register here</a></p>
+            
+           </div>
+        </div>
+    </body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/style.css">
+</head>
+
+<body>
+    <div class=" container d-flex">
+        <div class="login p-5 mt-3">
+            <img id="hero-logo" class="img-fluid" src="./index_files/hero-image.png" alt="">
+            .
+        </div>
+
+        <div id="login" class="container ">
+            <img id="header-logo" class="" src="./index_files/header-logo.svg" alt="">
+
+            <h1 id="h1">We Are Experts in Business , marketing , growth &amp; sales.</h1>
+
+            <h3>Login into your Account</h3>
+
+            <input class="login-input" type="text" name="text" placeholder="username">
+
+            <input class="login-input" type="password" name="password" placeholder="password">
+
+            <div id="text">
+                <button id="button-logo">Login</button>
+                <a id="forgot_pass">Forgot Password ? </a>
+            </div>
+
+            <p id="new-member">Are You a new Member ? <a id="register">Register Here.</a></p>
+
+
+        </div>
+    </div>
+</body>
+
 </html>

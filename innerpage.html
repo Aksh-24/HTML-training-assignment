@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis Page</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid justify-content-center">
+
+    <nav class=" navbar aksh">
+      <div class="d-flex justify-content-start gap-3">
+        <div class="p-2 d-flex flex-row gap-2">
+          <div class="menu-bar"  onclick={toggle_visibility()}>
+            <img src="/images/menu-bar.svg" class="menu-icon" alt="" />
+          </div>
+          <div class="company-logo">
+            <img src="/images/logo.svg" class="company-icon" alt="" />
+          </div>
+        </div>
+
+        <div class="p-2  gap-2 flex-row d-flex">
+          <div class="search-icon py-1">
+            <img src="/images//search-icon.svg" class="search-ico" alt="">
+          </div>
+          <div class="search-icon">
+            <input type="search" class="form-control search-bar me-2" placeholder="Search" aria-label="Search">
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="d-flex float-end gap-3">
+        <div class="p-2 my-auto">
+          <img src="/images/notification-icon.svg" alt="" class="notification-icon"/>
+        </div>
+
+        <div class="p-2 my-auto">
+          <img src="/images/profile.png" alt="" class="profile" />
+          <span class="username">John Doe</span>
+          <img src="/images/downward-arrow.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+
+
+
+  <div class="container-fluid d-flex ">
+  
+      <div class="" id="aksh">
+        <div class="w-auto mt-3">
+          <div class="p-2 gap-2 d-flex flex-row ">
+            <img src="/images/dashboard-default.svg" class="icon" alt="" />
+            <h3 class="item-text ">Dashboard</h3>
+          </div>
+          <div class=" d-flex p-2">
+            <img src="/images/graph-active.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2 text-danger">Analysis</h5>
+          </div>
+          <div class=" d-flex p-2">
+            <img src="/images/inbox-default.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2">Inbox</h5>
+          </div>
+          <div class=" d-flex p-2">
+            <img src="/images/clock-default.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2">History</h5>
+          </div>
+          <div class="d-flex p-2">
+            <img src="/images/user-default.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2">Users</h5>
+          </div>
+          <div class=" d-flex p-2">
+            <img src="/images/maintenance-default.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2">Maintenance</h5>
+          </div>
+          <div class=" d-flex p-2">
+            <img src="/images/setting-default.svg" class="icon" alt="" />
+            <h5 class="item-text mx-2">Setting</h5>
+          </div>
+        </div>
+      </div>
+    
+
+    <div class="innerpage d-flex flex-column pt-2 px-1">
+      <p class="header px-2 fs-2 fw-bold"> Analysis</p>
+
+      <div class="inner-column">
+        <div class="px-5">
+          <div class="d-flex flex-column gap-3 px-2">
+            <p class="col-detail fs-3 fw-bold">One column</p>
+            <input type="text" class="form-control py-2" placeholder="Name">
+            <input type="text" class="form-control py-2" placeholder="Dropdown">
+            <textarea id="" class="one-col-input form-control " cols="30" rows="5"
+              placeholder="Multiple line"></textarea>
+          </div>
+        </div>
+
+        <div class="px-5 d-flex flex-column gap-2 mt-5">
+          <div class="px-3">
+            <p class="col-detail fs-3 fw-bold">Two column</p>
+            <div class="row gap-3 my-3 px-3 mt-0 two-column">
+              <input type="text" class="form-control py-2 col" placeholder="Name">
+              <input type="text" class="form-control py-2 col" placeholder="Name">
+            </div>
+            <div class="row gap-3 px-3 two-column">
+              <input type="text" class="form-control py-2 col" placeholder="password">
+              <input type="text" class="form-control py-2 col" placeholder="Dropdown">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="px-5 d-flex flex-column gap-2 mt-5">
+          <div class="px-3">
+            <p class="col-detail fs-3 fw-bold">Three column</p>
+            <div class="row gap-3 my-3 px-3 mt-0 two-column">
+              <input type="text" class="form-control py-2 col" placeholder="Name">
+              <input type="text" class="form-control py-2 col" placeholder="Name">
+              <input type="text" class="form-control py-2 col" placeholder="Name">
+            </div>
+
+          </div>
+        </div>
+
+        
+          <div class="px-5 d-flex flex-column gap-2 mt-5">
+            <div class="px-3">
+              <p class="col-detail fs-3 fw-bold">Four column</p>
+              <div class="row gap-3 my-3 px-3 mt-0 two-column">
+                <input type="text" class="form-control py-2 col" placeholder="Name">
+                <input type="text" class="form-control py-2 col" placeholder="Name">
+                <input type="text" class="form-control py-2 col" placeholder="Name">
+                <input type="text" class="form-control py-2 col" placeholder="Name">
+              </div>
+  
+            </div>
+          </div>
+      
+       
+
+        <div class="px-5 d-flex flex-column gap-2 mt-5">
+          <p class="col-detail fs-3 fw-bold"> Other Design Elements</p>
+          <div class="">
+            <p class="fs-4 fw-bold">File Upload</p>
+            <div class="d-flex">
+              <Button class=" rounded-pill px-4 pt-2 upload "> <img class="img-fluid" src="/images/cloud-upload-icon.svg" alt="">
+                Upload</Button>
+              <p class="px-4 mt-2 text-muted">No items selected</p>
+
+            </div>
+
+
+            <p class="fs-4 fw-bold pt-2">Radio Button</p>
+            <input class="form-checkinput" type="radio" value="option1" name="radio">
+            <label class="form-check-label" id="radio1" for="flexCheckDefault">Option1</label>
+            <input class="form-checkinput" type="radio" value="option2" name="radio">
+            <label class="form-check-label" id="radio2" for="flexCheckDefault">Option2</label>
+
+            <p class="fs-4 fw-bold pt-2 ">Checkbox</p>
+            <input class="form-checkinput" type="checkbox" value="option1">
+            <label class="form-check-label" id="check1" for="flexCheckDefault">Option1</label>
+            <input class="form-checkinput" type="checkbox" value="option2">
+            <label class="form-check-label" id="check2 for=" flexCheckDefault">Option2</label>
+
+            <p class="fs-4 fw-bold pt-2 ">Snackbar</p>
+            <div class="row gap-3 my-3 px-3 mt-0">
+              <div class=" col alert alert-danger">
+                This is an error meassage
+              </div>
+
+              <div class=" col alert alert-info">
+                This is an info meassage
+              </div>
+            </div>
+
+            <div class="row gap-3 my-3 px-3 mt-0">
+              <div class=" col alert alert-warning">
+                This is an Warning meassage
+              </div>
+
+              <div class=" col alert alert-success">
+                This is an success meassage
+              </div>
+            </div>
+
+            <p class="fs-4 fw-bold pt-2 ">Call to Action</p>
+            <div class="d-flex">
+              <button type="button" class="btn btn-danger rounded-pill px-4">Primary</button>
+              <button type="button" class="btn btn-default rounded pill px-4">Default</button>
+            </div>
+
+            <p class="fs-4 fw-bold pt-4">Tabs</p>
+
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#">Tab1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tab2</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tab3</a>
+              </li>
+            </ul>
+
+
+            <p class="pt-4 paragraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi velit laborum aliquid
+              aspernatur cumque,
+              perferendis veniam explicabo non numquam? Vel saepe blanditiis recusandae doloribus animi quaerat nobis
+              inventore eaqu
+              libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum a, corrupti dolores et labore
+              suscipit magnam
+              ab nemo distinctio sint architecto, atque tempore? Totam accusantium maiores eius rem autem? Lorem ipsum
+              dolor sit amet
+              consectetur adipisicing elit. Iusto dolores impedit quos fugiat sapiente sunt inventore cum consequatur
+              asperiores a fugit
+              laboriosam tenetur natus quod, eligendi mollitia cumque vitae quo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+
+
+
+
+</body>
+
+</html>
