@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>login page</title>
+    
+    
+  <link rel="stylesheet" href="./login page_files/bootstrap.min.css"><link rel="stylesheet" href="./login page_files/style.css"></head>
+  <body>
+
+    <div class="container aksh">
+      <div class="row">
+        <div class="col-md-6 mt-5 d-flex align-items-center ">
+          <img src="./login page_files/hero-image.png" class="rounded-circle img-fluid img-logo" alt="">
+        </div>
+
+        <div class="col-md-6 earth">
+          <div class="p-3 ">
+
+            <div class="comp-info mb-4 ">
+              <img src="./login page_files/header-logo.svg" class="header-logo" alt="">
+            </div>
+
+            <div class="info mb-4">
+                <h3>We are <span class="text-danger">experts</span> in business marketing, growth, &amp; sales.</h3>
+            </div>
+
+            <div class="login-info mb-4">
+              <div class="mb-4">
+                <h5>Login into your account</h5>
+                 <div>
+                    <input type="text" class="form-control mb-3" placeholder="Username">
+
+                    <input type="password" class="form-control" placeholder="Password">
+                 </div>
+             
+            </div>
+
+            
+            <div class="btn d-flex mb-4">
+              <div class="login-btn btn-danger text-center py-1">Login</div>
+              <a href="http://127.0.0.1:5500/index.html#" class="forget-link text-muted text-decoration-none">Forget password?</a>
+            </div>
+
+            <div class="new-member ">
+                <span>Are you a new member?  <a href="http://127.0.0.1:5500/index.html#" class="text-danger text-decoration-none register-link">Register here </a></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+ 
+    </div></body></html>
